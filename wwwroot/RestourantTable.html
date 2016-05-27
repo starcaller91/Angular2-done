@@ -1,0 +1,11 @@
+﻿<div class="row">
+    <button type="button" class="btn btn-lg" style="width: 200px;" [ngStyle]="{backgroundColor: color}" (click)="onClickTable()">Table number: {{table.tableNumber}}</button>
+</div>   
+
+<div *ngIf="showDetails">
+    <ul>
+        <li *ngFor="let order of table.orders">
+            {{order.MenuId}}
+        </li>
+    </ul>
+</div>

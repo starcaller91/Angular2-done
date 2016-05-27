@@ -1,0 +1,12 @@
+﻿    <div *ngIf="show">
+        <div *ngFor="let table of tables">
+            <restourant-table [table]="table">
+
+            </restourant-table>
+        </div>
+    </div>
+
+
+<div class="row" [ngStyle]="{paddingTop: paddingTop}">
+    <a href="" [routerLink]="['/']" class="btn btn-lg btn-primary">link to root</a>
+</div>

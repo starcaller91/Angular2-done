@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <base href="/" />
+    <meta charset="utf-8" />
+    <title>Angular 2 with ASP.NET Core</title>
+    <!-- 1. Load libraries -->
+    <link href="libs/css/bootstrap.css" rel="stylesheet" />
+    <script src="libs/es6-shim/es6-shim.min.js"></script>
+    <script src="libs/zone.js/dist/zone.js"></script>
+    <script src="libs/reflect-metadata/Reflect.js"></script>
+    <script src="libs/systemjs/dist/system.src.js"></script>
+
+
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
+    <script>
+
+        System.import('appScripts/boot')
+              .then(null, console.error.bind(console));
+
+    </script>
+
+</head>
+<body>
+    <div class="container">
+        <app>Loading...</app>
+    </div>
+</body>
+</html>
